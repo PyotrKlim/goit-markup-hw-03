@@ -1,0 +1,267 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--basic-color);
+  background: var(--main-color);
+}
+
+:root {
+  /* цвета для текста */
+  --accent-color: #2196f3;
+  --basic-color: #212121;
+  --second-basic: #ffffff;
+  --logo-color: #000000;
+  --description-color: #757575;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  /*цвета для фона*/
+  --main-color: #ffffff;
+  --hero-footer-section-background: #2f303a;
+  --team-section-background: #f5f4fa;
+}
+
+/* перебивка стилей */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* <!-- шапка-хедер --> */
+.header-nav {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+/* логотип */
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.11;
+  margin-bottom: 20px;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+.logo-studio {
+  color: var(--logo-color);
+}
+
+/* навигация сайта и контакты */
+.site-nav .link {
+  color: var(--basic-color);
+  font-weight: 500;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav .link {
+  font-weight: 500;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
+}
+
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+/* общие эфекты ховера и фокуса. кнопки */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+
+.hero-button {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background: var(--accent-color);
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--second-basic);
+  margin: 0 auto;
+}
+
+.filters-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--basic-color);
+}
+
+.filters-button:hover,
+.filters-button:focus {
+  background: var(--accent-color);
+  color: var(--main-color);
+}
+.auto {
+  cursor: pointer;
+}
+
+.portfolio-link:hover {
+  background: var(--accent-color);
+}
+
+/* <!-- герой --> */
+.hero {
+  padding-top: 200px;
+  left: 0px;
+  top: 80px;
+  background: var(--hero-footer-section-background);
+  text-align: center;
+  height: 600px;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+
+  color: var(--second-basic);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* <!-- приимущества --> */
+/* общее скрытие заголовков */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.title-benefits {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.capital-letters {
+  text-transform: uppercase;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.71;
+  color: var(--description-color);
+}
+
+/* <!-- продукция --> */
+.products {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* <!-- команда --> */
+.section-team {
+  background: var(--team-section-background);
+}
+
+.team {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-card {
+  background-color: var(--main-color);
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-description {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* <!-- подвал-футер --> */
+.footer {
+  background: var(--hero-footer-section-background);
+}
+
+.list-address {
+  font-style: normal;
+}
+
+.logo-footer-studio,
+.footer-address {
+  color: var(--second-basic);
+}
+
+.footer-contact {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+}
+
+/* <!-- карточки робот --> */
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--basic-color);
+}
+
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+/* позиционирование */
