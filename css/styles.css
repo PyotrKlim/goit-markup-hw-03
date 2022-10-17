@@ -18,6 +18,8 @@ body {
   --main-color: #ffffff;
   --hero-footer-section-background: #2f303a;
   --team-section-background: #f5f4fa;
+  /* цвет рамки карточек работ */
+  --work-card-frame: #eeeeee;
 }
 
 /* перебивка стилей */
@@ -29,6 +31,10 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+img {
+  display: block;
 }
 
 /* <!-- шапка-хедер --> */
@@ -71,10 +77,6 @@ body {
   margin-left: 92px;
 }
 
-.site-nav .current {
-  color: var(--accent-color);
-}
-
 .site-nav .item + .item {
   margin-left: 50px;
 }
@@ -88,6 +90,10 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.site-nav .current {
+  color: var(--accent-color);
 }
 
 /* контакты */
@@ -134,6 +140,12 @@ body {
 }
 
 .filters-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -152,10 +164,6 @@ body {
   cursor: pointer;
 }
 
-.portfolio-link:hover {
-  background: var(--accent-color);
-}
-
 /* <!-- герой --> */
 .hero {
   padding-top: 200px;
@@ -163,7 +171,7 @@ body {
   top: 80px;
   background: var(--hero-footer-section-background);
   text-align: center;
-  height: 600px;
+  height: 400px;
 }
 
 .hero-title {
@@ -182,7 +190,13 @@ body {
   text-transform: uppercase;
 }
 
-/* <!-- приимущества --> */
+/* <!-- преимущества --> */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* общее скрытие заголовков */
 .visually-hidden {
   position: absolute;
@@ -195,6 +209,11 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 30px;
 }
 
 .title-benefits {
@@ -217,10 +236,23 @@ body {
 }
 
 /* <!-- продукция --> */
+.products-section {
+  padding-top: 0;
+}
+
 .products {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+.products-list {
+  display: flex;
+  gap: 30px;
 }
 
 /* <!-- команда --> */
@@ -229,10 +261,18 @@ body {
 }
 
 .team {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 
 .team-card {
@@ -240,6 +280,8 @@ body {
 }
 
 .team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -248,6 +290,7 @@ body {
 }
 
 .team-description {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -257,10 +300,28 @@ body {
 /* <!-- подвал-футер --> */
 .footer {
   background: var(--hero-footer-section-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  flex-direction: column;
 }
 
 .list-address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
   font-style: normal;
+}
+
+.address-item {
+  margin-bottom: 9px;
+}
+
+.address-item:last-child {
+  margin-bottom: 0;
 }
 
 .logo-footer-studio,
@@ -275,9 +336,39 @@ body {
   color: var(--footer-contact-color);
 }
 
+/* <!-- фильтры карточек работ --> */
+.work-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 50px;
+}
+
 /* <!-- карточки робот --> */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.text-cards-portfolio {
+  box-sizing: border-box;
+  border: 1px solid var(--work-card-frame);
+  border-top: none;
+  padding-top: 20px;
+}
 
 .portfolio-title {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  margin-right: 24px;
+  margin-left: 24px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -285,9 +376,11 @@ body {
 }
 
 .portfolio-description {
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-
-/* позиционирование */
