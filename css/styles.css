@@ -4,6 +4,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--basic-color);
   background: var(--main-color);
+  margin: 0;
 }
 
 :root {
@@ -19,6 +20,7 @@ body {
   --hero-footer-section-background: #2f303a;
   --team-section-background: #f5f4fa;
   /* цвет рамки карточек работ */
+  --border-header: #ececec;
   --work-card-frame: #eeeeee;
 }
 
@@ -42,14 +44,14 @@ img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .header {
-  display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--border-header);
 }
 .header-nav {
   display: flex;
@@ -74,7 +76,7 @@ img {
 .site-nav {
   display: flex;
   align-items: center;
-  margin-left: 92px;
+  padding-left: 92px;
 }
 
 .site-nav .item + .item {
@@ -145,6 +147,7 @@ img {
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 4px;
+  border: none;
 
   font-family: inherit;
   font-weight: 500;
@@ -167,8 +170,6 @@ img {
 /* <!-- герой --> */
 .hero {
   padding-top: 200px;
-  left: 0px;
-  top: 80px;
   background: var(--hero-footer-section-background);
   text-align: center;
   height: 400px;
@@ -240,6 +241,10 @@ img {
   padding-top: 0;
 }
 
+.products-container {
+  display: block;
+}
+
 .products {
   text-align: center;
   margin-top: 0;
@@ -260,10 +265,13 @@ img {
   background: var(--team-section-background);
 }
 
+.team-container {
+  display: block;
+}
+
 .team {
   margin-top: 0;
   margin-bottom: 50px;
-
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -279,8 +287,13 @@ img {
   background-color: var(--main-color);
 }
 
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -290,7 +303,6 @@ img {
 }
 
 .team-description {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -343,10 +355,15 @@ img {
   align-items: center;
 }
 
+.portfolio-container {
+  flex-direction: column;
+  align-items: center;
+}
+
 .filters {
   display: flex;
   gap: 8px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* <!-- карточки робот --> */
@@ -361,13 +378,14 @@ img {
   border: 1px solid var(--work-card-frame);
   border-top: none;
   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .portfolio-title {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 4px;
-  margin-right: 24px;
-  margin-left: 24px;
 
   font-size: 18px;
   line-height: 2;
@@ -376,10 +394,6 @@ img {
 }
 
 .portfolio-description {
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-bottom: 20px;
-
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
