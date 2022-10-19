@@ -85,9 +85,8 @@ img {
 
 .site-nav .link {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
-
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--basic-color);
   font-weight: 500;
   line-height: 1.14;
@@ -363,7 +362,7 @@ img {
 .filters {
   display: flex;
   gap: 8px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 /* <!-- карточки робот --> */
