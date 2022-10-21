@@ -41,7 +41,6 @@ img {
 
 /* <!-- шапка-хедер --> */
 .container {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -49,9 +48,13 @@ img {
   padding-right: 15px;
 }
 
-.header {
-  align-items: center;
+header {
   border-bottom: 1px solid var(--border-header);
+}
+
+.header {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
@@ -137,11 +140,8 @@ img {
 
   border-radius: 4px;
   border: none;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--second-basic);
-  margin: 0 auto;
 }
 
 .filters-button {
@@ -353,19 +353,9 @@ img {
 }
 
 /* <!-- фильтры карточек работ --> */
-.work-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.portfolio-container {
-  flex-direction: column;
-  align-items: center;
-}
-
 .filters {
   display: flex;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
